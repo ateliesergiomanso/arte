@@ -23,7 +23,7 @@
     <link rel="icon" type="image/svg+xml" data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzQzNDM0MyIvPgo8dGV4dCB4PSIxNiIgeT0iMjAiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjE0IiBmb250LWZhbWlseT0iQXJpYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk08L3RleHQ+Cjwvc3ZnPgo=">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -33,7 +33,7 @@
         }
         
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Lato', sans-serif;
             font-weight: 400;
             font-size: 14px;
             line-height: 1.6;
@@ -74,13 +74,11 @@
         .subtitle {
             margin-bottom: 25px;
             color: #434343;
-            font-size: 16px;
         }
         
         .subtitle a {
             color: #1155CC;
             text-decoration: none;
-            font-size: 16px;
         }
         
         .product-image {
@@ -93,7 +91,7 @@
         .price {
             font-size: 18px;
             font-weight: bold;
-            margin: 15px 0;
+            margin: 20px 0;
         }
         
         .delivery {
@@ -108,10 +106,9 @@
             padding: 12px 30px;
             text-decoration: none;
             border: 2px solid #1155CC;
-            margin: 10px 0;
+            margin: 20px 0;
             font-weight: bold;
             transition: all 0.3s ease;
-            align: center;
         }
         
         .cta-button:hover {
@@ -269,7 +266,7 @@
         .footer {
             text-align: center;
             padding: 40px 0 20px 0;
-            font-size: 11px;
+            font-size: 9px;
             color: #666;
             border-top: 1px solid #eee;
             margin-top: 50px;
@@ -283,7 +280,31 @@
                 <!-- Seção Imagem Principal -->
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbdbtmGH2unI7NMJcDInTEFXXWzlvbyGoP5NEYBY19Pt7MoTgXKhio_CZ40fXugBnBtc7VrrgXLG_bvXMWFIydbnU-ve6jK3pL2k4zDFv_MbV9XDY-wF5dPlzRGV5O_aefNEgPBCxF-gNQVKxqmMZrta_-83NCY1YQVCtiHHHEOhU72RgQ4-9y1gmFaAU/s16000/mockup-8(3).gif" alt="Mulher Marisqueira 2025" class="product-image">
                 
-                          
+                <!-- Carrossel de Imagens -->
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbdbtmGH2unI7NMJcDInTEFXXWzlvbyGoP5NEYBY19Pt7MoTgXKhio_CZ40fXugBnBtc7VrrgXLG_bvXMWFIydbnU-ve6jK3pL2k4zDFv_MbV9XDY-wF5dPlzRGV5O_aefNEgPBCxF-gNQVKxqmMZrta_-83NCY1YQVCtiHHHEOhU72RgQ4-9y1gmFaAU/s16000/mockup-8(3).gif" alt="Vista frontal da obra">
+                                <div class="carousel-caption">Vista frontal da obra emoldurada</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="video-placeholder">Vídeo demonstrativo do produto</div>
+                                <div class="carousel-caption">Demonstração da qualidade da impressão</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vídeo UGC -->
+                <div class="video-section">
+                    <div class="video-placeholder">
+                        Vídeo UGC (9:16)<br>
+                        Depoimento de cliente sobre a qualidade
+                    </div>
+                </div>
+            </div>
+            
             <div class="right-column">
                 <!-- Headline -->
                 <h1>Mulher Marisqueira, 2025</h1>
@@ -304,10 +325,9 @@
                 
                 <!-- Envio -->
                 <div class="delivery">Prazo de entrega: até 6 dias (Brasil)</div>
-
+                
                 <!-- Informações -->
                 <div class="section">
-                    <p>Prazo de entrega: até 6 dias</p>
                     <a href="#" id="infoLink" style="color: #1155CC; text-decoration: none;">Informações de Compra</a>
                 </div>
                 
@@ -339,27 +359,10 @@
                 <!-- Artist Statement -->
                 <div class="accordion">
                     <div class="accordion-header">Artist statement ⌵</div>
-                    o melhor do (continuar lendo)
                     <div class="accordion-content">
                         <p>Os quadros desta curadoria exploram formas, cores e texturas de maneira livre. Uma seleção pensada para quem aprecia arte contemporânea, valoriza a estética moderna e quer compor ambientes com quadros expressivos — ideais para sala, quarto, escritórios e outros espaços criativos.</p>
                         <h3 style="margin-top: 15px;">Sobre o artista</h3>
                         <p>Sérgio Manso é pintor, gravador e ceramista.</p>
-                    </div>
-                </div>
-
-                                <!-- Carrossel de Imagens -->
-                <div class="carousel">
-                    <div class="carousel-container">
-                        <div class="carousel-track" id="carouselTrack">
-                            <div class="carousel-slide">
-                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbdbtmGH2unI7NMJcDInTEFXXWzlvbyGoP5NEYBY19Pt7MoTgXKhio_CZ40fXugBnBtc7VrrgXLG_bvXMWFIydbnU-ve6jK3pL2k4zDFv_MbV9XDY-wF5dPlzRGV5O_aefNEgPBCxF-gNQVKxqmMZrta_-83NCY1YQVCtiHHHEOhU72RgQ4-9y1gmFaAU/s16000/mockup-8(3).gif" alt="Vista frontal da obra">
-                                <div class="carousel-caption">Vista frontal da obra emoldurada</div>
-                            </div>
-                            <div class="carousel-slide">
-                                <div class="video-placeholder">Vídeo demonstrativo do produto</div>
-                                <div class="carousel-caption">Demonstração da qualidade da impressão</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
@@ -506,21 +509,4 @@
         setInterval(nextSlide, 5000);
     </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
