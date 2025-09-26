@@ -341,6 +341,16 @@
         .video-player::-moz-media-controls {
             background-color: rgba(0, 0, 0, 0.8);
         }
+
+                /* Remove o botão de tela cheia - Webkit (Chrome, Safari) */
+        .video-player::-webkit-media-controls-fullscreen-button {
+            display: none !important;
+        }
+
+        /* Remove o botão de tela cheia - Firefox */
+        .video-player::-moz-media-controls-fullscreen-button {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -670,6 +680,7 @@
     </script>
 </body>
 </html>
+
 
 
 
