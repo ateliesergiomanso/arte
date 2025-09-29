@@ -275,6 +275,16 @@
                 aspect-ratio: 4 / 5;
             }
 
+            .carousel-slide {
+                height: 100%;
+            }
+
+            .carousel-image {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+
         .carousel-nav {
             display: flex;
             justify-content: space-between;
@@ -363,7 +373,7 @@
             }
 
             .carousel-caption {
-                font-size: 16px;
+                font-size: 20px;
                 padding: 20px;
             }
 
@@ -377,7 +387,7 @@
         /* Desktop layout - two columns */
         @media (min-width: 768px) {
             .carousel-container {
-                width: 100%;
+                width: 60%;
                 margin-left: auto;
                 max-width: 800px;
             }
@@ -386,7 +396,7 @@
         /* Mobile optimizations */
         @media (max-width: 767px) {
             .carousel-container {
-                margin: 0px;
+                margin: 10px;
                 width: calc(100% - 20px);
                 height: calc(100vh - 20px);
                 border-radius: 10px;
@@ -1031,6 +1041,7 @@ As convenções e padrões estabelecidos para numerar e assinar edições de art
     </script>
 </body>
 </html>
+
 
 
 
