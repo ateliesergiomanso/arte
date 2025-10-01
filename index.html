@@ -610,16 +610,6 @@
                     </ul>
                     <br>
                 </div>
-
-                <div class="content-wrapper">
-  <p class="summary">
-    Este é um texto resumido... [1]
-  </p>
-  <p class="full-content" style="display: none;">
-    Este é o conteúdo completo que será revelado quando o usuário clicar no botão "Leia mais". [1]
-  </p>
-  <button id="readMoreBtn">Leia mais</button> [6]
-</div>
                 
                 <!-- Artist Statement -->
                 <div class="accordion">
@@ -1050,20 +1040,6 @@ As convenções e padrões estabelecidos para numerar e assinar edições de art
         document.addEventListener('DOMContentLoaded', () => {
             new ResponsiveCarousel();
         });
-
-        const readMoreBtn = document.getElementById('readMoreBtn'); // Seleciona o botão
-const summary = document.querySelector('.summary');
-const fullContent = document.querySelector('.full-content');
-
-readMoreBtn.addEventListener('click', () => { // Adiciona um evento de clique
-  if (fullContent.style.display === 'none') {
-    fullContent.style.display = 'block'; // Exibe o conteúdo completo
-    readMoreBtn.textContent = 'Leia menos'; // Muda o texto do botão
-  } else {
-    fullContent.style.display = 'none'; // Oculta o conteúdo completo
-    readMoreBtn.textContent = 'Leia mais'; // Muda o texto do botão
-  }
-});
     </script>
 </body>
 </html>
